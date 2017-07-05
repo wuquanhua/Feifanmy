@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN" manifest="cache.manifest">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>企业服务网站-首页</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap1-responsive.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap1.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/travel.css" />
+	<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+	<body>
+		<!--导航区域--板块-->
+		<div class="navbar-box">
+			<div class="container">
+				<!--导航-反色-->
+				<div class="navbar navbar-inverse">
+					<!--导航-内部-->
+					<div class="navbar-inner">
+						<a class="brand" href="#">企业服务网站</a>
+						<!--引用折叠导航-(包括 responsive.css)-->
+						<div class="nav-collapse collapse">
+							<ul class="nav">
+								<li class="active">
+									<a href="#">首页</a>
+								</li>
+								<li>
+									<a href="#about">关于我们</a>
+								</li>
+								<li>
+									<a href="#contact">联系我们</a>
+								</li>
+								<!--下拉菜单-触发器-->
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">帮助 <b class="caret"></b></a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#">企业</a>
+										</li>
+										<li>
+											<a href="#">商户</a>
+										</li>
+										<li>
+											<a href="#">服务网站</a>
+										</li>
+										<li class="divider"></li>
+										<li class="nav-header">服务信息</li>
+										<li>
+											<a href="#">信息1</a>
+										</li>
+										<li>
+											<a href="#">信息2</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--轮播区域--板块-->
+		<div id="myCarousel" class="carousel slide">
+			<!--内部的轮播-->
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="img/examples/slide-01.jpg" alt="">
+					<div class="container">
+						<!--轮播-标题-->
+						<div class="carousel-caption">
+							<h1>就是现在加入我们 .</h1>
+							<!--引导-->
+							<p class="lead">经历是过去的</p>
+							<a class="btn btn-large btn-primary" href="Travel-login.html">马上注册</a>
+							<a class="btn btn-large btn-primary" href="travel-login-two.html">登录</a>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/examples/slide-02.jpg" alt="">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>让抱团充满正能量 .</h1>
+							<p class="lead">能力是现在的</p>
+							<a class="btn btn-large btn-primary" href="#">了解更多</a>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="img/examples/slide-03.jpg" alt="">
+					<div class="container">
+						<div class="carousel-caption">
+							<h1>大脑满电啥也不怕 .</h1>
+							<p class="lead">只有不断学习才能把握未来.</p>
+							<a class="btn btn-large btn-primary" href="#">链接到····</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+			<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+		</div>
+		<!--主体区域--板块-->
+		<article class="container">
+			<!--主体1--内容-->
+			<section class="row" id="travel">
+				<div class="span12 view">
+					<div class="row">
+						<div class="span6">
+							<div class="block-left">
+								<h1>旅行</h1>
+								<p class="wo">地球是一本书，不旅行的人只看到其中的半页；常旅行的人虽然不能一字不漏的记住书中的每个文字，但可以挑选其中最喜欢的段落与章节，去欣赏，去吟唱，让自己生命更有意义…</p>
+								<br />
+								<p class="wo">旅行者营养成分比率：旅行者100% = 挑战精神25% ＋勇气25% ＋闲暇20%＋欲望15% ＋经济能力15% 。原来只要勇气+挑战精神就成功了一半…</p>
+								<a data-toggle="modal" href="#aboutMaps">关于图片数据</a>
+
+								<!-- Modal -->
+								<!--我的模态标签-->
+								<div id="aboutMaps" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+										<h3 id="myModalLabel">关于图片数据</h3>
+									</div>
+
+									<div class="modal-body">
+										<p>图片数据来自
+											<a target="" href="javascript:;">Natural-自然</a>
+										</p>
+										<p>该图片为徒步旅行，崇尚健康、自由。</p>
+										<p class="text-error">·&nbsp;<small>有些事情，如果现在不去做，一辈子也不会去做了！</small></p>
+
+										<hr class="soften">
+
+										<h4>关于旅行中的那些事</h4>
+										<p class="text-success">旅途没有终点，有的只是驿站和目的地：</p>
+										<ul>
+											<li>
+												<p>如果没有机会去旅行，就用心感悟吧！世界上总有那么一个地方，向往着，却到不了</p>
+											</li>
+											<li>
+												<p>喜欢一个地方，不仅仅是因为那里的风景、人文，可能更多的是一种心灵的感觉，说不清，道不明，就像爱情。</p>
+											</li>
+											<li>
+												<p>做一个美梦，到一个地方，邂逅一段感情，回味一生……</p>
+											</li>
+											<li>
+												<p>最后更新时间：2017年4月</p>
+											</li>
+										</ul>
+									</div>
+									<div class="modal-footer">
+										<button data-dismiss="modal" class="btn" aria-hidden="true">关闭</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--右边图片-->
+						<div class="span6">
+							<div class="map">
+								<img src="img/lovepedes.jpg" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--主体2--内容-->
+			<section class="row" id="apple">
+				<div class="span12 view relative">
+					<img src="img/ribbon-apple.png" class="ribbon-apple">
+					<div class="row">
+						<div class="span6">
+							<img src="img/photograph.jpg" class="iphone-news">
+						</div>
+
+						<div class="span6">
+							<div class="padding-huge">
+								<h1>Apple</h1>
+								<br />
+								<p class="wo">但亚洲地区很多摄影师都渐渐开始爱上使用手机来摄影。<br /></p>
+								<p>同样来自新加坡的技术爱好者在谈到手机摄影的时候也说图像质量、速度和易用性是三大标准。但亚洲地区很多摄影师都渐渐开始爱上使用手机来摄影。<br /></p>
+								<p>iPhone 现在已经成为很多摄影师们留住精彩瞬间的工具，我们也期待着未来有更多用 iPhone 拍摄的精彩照片出现。</p>
+								<a href="javascript:;" title="但亚洲地区很多摄影师都渐渐开始爱上使用手机来摄影。<br /><br />同样来自新加坡的技术爱好者在谈到手机摄影的时候也说图像质量、速度和易用性是三大标准。<br /><br />iPhone 现在已经成为很多摄影师们留住精彩瞬间的工具，我们也期待着未来有更多用 iPhone 拍摄的精彩照片出现。" data-html="tooltip" data-placement="right" class="news">相关实事报道 »</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--主体3--内容-->
+			<section class="row" id="contact">
+				<div class="span12 view">
+					<div class="row">
+						<div class="span12">
+							<div class="padding-large">
+								<h1>联系</h1>
+								<div class="muiti-contact">
+									<span class="email" title="爱上徒步  | 爱上旅行" data-toggle="tooltip">www.loveTravel.com/tourquanhua</span>
+									<!--[if lt IE 9]>
+	                            <p class="text-warning">当前浏览器不支持该模块的交互效果，无法动态展示联系方式，建议升级或换用更高级的浏览器。</p>
+	                            <p class="text-info">Twitter, Instagram, Path, 新浪微博、腾讯微博和微信的名称为 @yanlaichen</p>
+	                            <![endif]-->
+								</div>
+							</div>
+						</div>
+						<div class="span12">
+							<div class="padding-large">
+								<div class="sns">
+									<div class="sns-container">
+										<a target="" href="javascript:;">
+											<div title="脸书" data-toggle="tooltip" class="sns-icon" id="icon-facebook"><img src="img/facebook.png"></div>
+										</a>
+										<a target="" href="javascript:;">
+											<div title="推特" data-toggle="tooltip" class="sns-icon" id="icon-twitter"><img src="img/twitter.png"></div>
+										</a>
+										<a target="" href="javascript:;">
+											<div title="照片分享" data-toggle="tooltip" class="sns-icon" id="icon-instagram"><img src="img/instagram.png"></div>
+										</a>
+										<a target="" href="javascript:;">
+											<div title="照相" data-toggle="tooltip" class="sns-icon" id="icon-path"><img src="img/path.png"></div>
+										</a>
+									</div>
+									<div class="sns-container">
+										<a target="" href="javascript:;">
+											<div title="新浪微博" data-toggle="tooltip" class="sns-icon" id="icon-sinaweibo"><img src="img/SinaWeibo.png"></div>
+										</a>
+										<a target="" href="javascript:;">
+											<div title="腾讯微博" data-toggle="tooltip" class="sns-icon" id="icon-tencentweibo"><img src="img/TencentWeibo.png"></div>
+										</a>
+										<a target="" href="javascript:;">
+											<div title="微信" data-toggle="tooltip" class="sns-icon" id="icon-wechat"><img src="img/wechat.png"></div>
+										</a>
+										<a target="" href="javascript:;">
+											<div title="QQ" data-toggle="tooltip" class="sns-icon" id="icon-qq"><img src="img/qq.png"></div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</article>
+		<!--底部区域--板块-->
+		<div class="container">
+			<footer>
+				<p class="pull-right">
+					<a href="javascript:;">版权所有</a>
+				</p>
+				<p>&copy;&nbsp;2017&nbsp;loveTravel.com/tourquanhua, Good. 
+					<a href="javascript:;">bootstrap资料</a>&nbsp;&middot;
+					<a href="javascript:;">叶秋 &middot; cheer</a>
+				</p>
+			</footer>
+		</div>
+		<script type="text/javascript">
+			$(".sns-icon").tooltip(Option);
+			$(".email").tooltip(Option);
+			$(".news").tooltip(Option);
+			
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN" manifest="cache.manifest">
+	
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>用户注册</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+		<link rel="stylesheet" href="css/travel-login.css" />
+	</head>
+
+	<body>
+
+		<div class="container">
+			<!--头部-板块-->
+			<div class="top-bar bg-primary text-center">
+				<span class="text">用户注册</span>
+						<!--树叶-->
+				<span class="leaf fa fa-pagelines"></span>
+			</div>
+			<!--主体-板块-->
+			<div class="well reg-box">
+				<form action="" method="post">
+					<!--用户名-->
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="form-group has-feedback has-success">
+								<label class="control-label" for="user">用户名</label>
+								<span id="help-user" class="help"></span>
+								<div class="input-group">
+									<span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+									<input type="text" class="form-control" id="user" placeholder="输入以字母开头的帐号" onblur="leave(this)">
+									<span class="glyphicon  form-control-feedback" aria-hidden="true"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--邮箱-->
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="form-group has-feedback has-success">
+								<label class="control-label" for="email">邮箱</label>
+								<!--<span id="help-email" class="help"></span>-->
+								<div class="input-group">
+									<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+									<input type="text" class="form-control" id="email" placeholder="如：397643450@qq.com" onblur="leave(this)">
+									<span class="glyphicon  form-control-feedback" aria-hidden="true"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--密码-->
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="form-group has-feedback has-error">
+								<label class="control-label" for="pwd">密码</label>
+								<!--<span id="help-pwd" class="help"></span>-->
+								<div class="input-group">
+									<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+									<input type="password" class="form-control" id="pwd" placeholder="输入不少于6位数的密码" onblur="leave(this)">
+									<span class="glyphicon  form-control-feedback" aria-hidden="true"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--验证码-->
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="form-group has-feedback  has-warning">
+								<label class="control-label" for="pwd2">验证码</label>
+								<div class="input-group">
+									<span class="input-group-addon"><span class="glyphicon glyphicon-edit"></span></span>
+									<input type="text" class="form-control" id="pwd2" maxlength="4" placeholder="请输入验证码">
+									<!--验证码-->
+									<input type="text" id="yzm" value="1024" />
+									<input type="button" id="random" value="随机" onclick="butt()" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--同意协议-->
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="has-success">
+								<div class="checkbox">
+									<label>
+						      <input type="checkbox" id="agree" value="option1"  checked="">同意注册协议
+						    </label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!--注册-->
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1">
+					<input type="submit" id="login" onclick="login(this)" class="btn btn-lg btn-success btn-primary btn-block" value="注册" />
+				</div>
+			</div>
+			<!--第三方-->
+			<div class="top-footer">
+				<span>使用第三方账号直接登录</span>&nbsp;&nbsp;
+				<a href="Bootstrap-Travel.html" class="btn btn-weibo"><i class="icon icon-weibo"></i><i class=" fa fa-weibo"></i></a>
+				<a href="Bootstrap-Travel.html" class="btn btn-qq"> <i class="icon icon-qq"></i><i class="fa fa-qq"></i></a>
+				<a href="Bootstrap-Travel.html" class="btn btn-weixin"> <i class="icon icon-weixin"></i><i class="fa fa-weixin"></i></a>
+			</div>
+			<!--底部板块-->
+			<div class="footer">
+				<p class="footer_links">
+					<a href="javascript:;" class="footer_link" style="color: gray;">底部链接</a>
+					<a href="javascript:;" class="footer_link" style="color: gray;">底部链接</a>
+				</p>
+				<p class="footer_text"><span style="color: gray;">Copyright © 2016-2017 LoveTravel</span></p>
+			</div>
+		</div>
+		<script type="text/javascript">
+			//验证码
+			function butt() {
+				document.getElementById('yzm').value = parseInt(Math.random() * 9000 + 1000);
+			}
+
+			var tips = document.getElementsByClassName("help")[0];
+			var chance = 0;
+
+			//光标离开验证
+			function leave(obl) {
+				var leave = obl.value;
+				if(leave.length == 0) {
+					tips.innerText = "信息框不能为空，请按要求填写信息！";
+				} else if(leave.length < 6) {
+					tips.innerText = "输入字符不得少于六位！";
+				} else {
+					tips.innerText = "";
+				};
+			};
+			//开始注册
+			function login(btn) {
+				var user = document.getElementById("user");
+				var email = document.getElementById("email");
+				var pwd = document.getElementById("pwd");
+				if(user.value == 0 || email.value == 0 || pwd.value == 0) {
+					tips.innerText = "信息框不能为空，请按要求填写信息！";
+					return;
+				};
+				if(user.value != "admin123"){
+					tips.innerText = "登录失败！请重新输入！";
+				}else if(pwd.value == "admin123456" && email.value == "397643450@qq.com"){
+					tips.innerText = "恭喜：注册成功！";
+				}else{
+					tips.innerText = "登录失败！请重新输入！";
+					return;
+				};
+				
+				
+				
+					
+			};
+		</script>
+	</body>
+
+</html>

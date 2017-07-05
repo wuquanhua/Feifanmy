@@ -1,0 +1,153 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	padding-bottom: 40px; 
+	color: #5a5a5a;
+    background: url("../img/mooning.png") repeat scroll 0 0 #E5E5E5;
+    overflow-x: hidden;
+}
+p {
+	/*光标形状，默认*/
+    cursor: default;
+    font: 500 15px/1.8em "arial, helvetica, sans-serif";
+}
+a:not(.btn) {
+    color: #00699E;
+    transition: all 300ms ease 0s;
+}
+a:hover:not(.btn), a:active:not(.btn) {
+    color: red;
+    text-decoration: none;
+    transform: translateY(-3px);
+}
+.relative{
+	position: relative;
+}
+/*所有被选中的文本*/
+*::selection {
+    background: none repeat scroll 0 0 transparent;
+    color: #FFFFFF;
+    background-color: blueviolet;
+}
+/*以上为所有通用样式*/
+
+/*导航栏--板块*/
+.navbar-box{
+	position: absolute; top: 0; left: 0; right: 0; z-index: 10; margin-top: 20px; margin-bottom: -90px;
+}
+.navbar .navbar-inner{
+	border: 0; -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25); -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25); box-shadow: 0 2px 10px rgba(0,0,0,.25);
+}
+.navbar .brand{
+	padding: 14px 20px 16px; font-size: 16px; font-weight: bold;
+}
+.navbar .nav > li > a{
+	padding: 15px 20px;
+}
+.navbar .btn-navbar{
+	margin-top: 10px;
+}
+/*轮播--板块*/
+.carousel{
+	margin-bottom: 60px;
+}
+.carousel .container{
+	position: relative; z-index: 9;
+}
+.carousel-control{
+	height: 80px; margin-top: 0; font-size: 120px; text-shadow: 0 1px 1px rgba(0,0,0,.4); background-color: transparent; border: 0; z-index: 10;
+}
+.carousel .item{
+	height: 500px;
+}
+.carousel img{
+	position: absolute; top: 0; left: 0; min-width: 100%; height: 500px;
+}
+.carousel-caption{
+	background-color: transparent; position: static; max-width: 550px; padding: 0 20px; margin-top: 200px;
+}
+.carousel-caption h1{
+	margin: 0; line-height: 1.85em; color: #FFFFFF; text-shadow: 4px 4px 1px rgba(0,0,0,.4);
+}
+.carousel-caption .lead{
+	margin: 0; line-height: 1.25em; color: #FAF2CC; text-shadow: 4px 4px 1px rgba(0,0,0,.4);
+}
+.carousel-caption .btn{
+	margin-top: 20px;
+}
+/*section-主体内容 1*/
+/*左边部分*/
+.view{
+	background: url(../img/white_wall_hash.png) repeat 0 0 scroll #FFFFFF;
+	border-radius: 6px;
+	color: #333333;
+	box-shadow: 0px 1px 8px 2px rgba(0,0,0,0.35),0px 20px 70px 8px rgba(0,0,0,0.25);
+	margin-bottom: 100px;
+}
+.view h1{
+	cursor: default;
+}
+.view .block-left{
+	padding: 27px;
+}
+p.wo:first-letter{
+	font-size: 120%;
+	color: #000000;
+	padding-right: 1px;
+}
+/*右边部分*/
+.map img{
+	background-color: transparent;
+	border-radius:0 6px 6px 0;
+	height: 100%;
+}
+
+/*section-主体内容 2*/
+/*带状图片*/
+.ribbon-apple{
+	position: absolute;
+	top: -5px;
+	right: 20px;
+	max-width: 70px;
+}
+.iphone-news{
+	border-radius:6px 0 0 6px ;
+	max-width: 480px;
+}
+/*巨大的*/
+.padding-huge{
+	padding: 27px;
+}
+
+
+/*section-主体内容 3*/
+/*较大的*/
+.padding-large{
+	padding: 45px;
+}
+.muiti-contact{
+	text-align: center;
+	text-shadow: 3px 3px 10px rgba(0,0,0,0.4);
+	font:500 30px/1.5em  "arial, helvetica, sans-serif";
+	color:gray;
+	cursor: default;
+}
+.sns{
+	margin: 0 auto;
+	max-width: 1040px;
+}
+.sns-container{
+	margin: 0 auto;
+	max-width: 520px;
+	position: relative;
+}
+.sns-icon{
+	float: left;
+	margin: 0 30px 50px;
+	border-radius: 20px;
+	box-shadow: 0px 2px 15px 4px rgba(0,0,0,0.3);
+	width: 70px;
+	position: relative;
+}
